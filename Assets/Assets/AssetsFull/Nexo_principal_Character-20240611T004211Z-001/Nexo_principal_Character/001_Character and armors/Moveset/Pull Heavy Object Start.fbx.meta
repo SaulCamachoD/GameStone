@@ -1,5 +1,5 @@
 fileFormatVersion: 2
-guid: eb785047fa97e274084fff1b08989cfc
+guid: 5213eb48adb0d7a42b71fbd6b673b9ef
 ModelImporter:
   serializedVersion: 22200
   internalIDToNameTable: []
@@ -33,11 +33,11 @@ ModelImporter:
     extraUserProperties: []
     clipAnimations:
     - serializedVersion: 16
-      name: Run
+      name: Pull Heavy Object Start
       takeName: mixamo.com
       internalID: -203655887218126122
       firstFrame: 0
-      lastFrame: 21
+      lastFrame: 32
       wrapMode: 0
       orientationOffsetY: 0
       level: 0
