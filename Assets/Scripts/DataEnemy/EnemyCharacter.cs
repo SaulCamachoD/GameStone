@@ -3,6 +3,7 @@ using System.Collections.Generic;
 using UnityEngine;
 using System.Diagnostics;
 using System;
+using UnityEngine.AI;
 using Debug = UnityEngine.Debug;
 
 
@@ -17,9 +18,9 @@ public abstract class EnemyCharacter : ScriptableObject
     public float distanciaSeguir;
     public float distanciaAtacar;
     public float distanciaEscapar;
-    
     public Transform target;
     public float distancia;
+   
 
     public bool vivo = true;
     
@@ -27,7 +28,7 @@ public abstract class EnemyCharacter : ScriptableObject
     {
         target = transformTarget;
     }
-
+    // ReSharper disable Unity.PerformanceAnalysis
     public void CheckEstado()
     {
         switch (estado)
@@ -126,39 +127,6 @@ public abstract class EnemyCharacter : ScriptableObject
     }
 }
 
-
-//Logica para comportamiento del enemigo.
-
-
-[CreateAssetMenu(menuName = "Create EnemyProPlayer", fileName = "EnemyProPlayer", order = 0)]
-class EnemyProPlayer : EnemyCharacter
-{
-    public override void EstadoIdle()
-    {
-        base.EstadoIdle();
-        UnityEngine.Debug.Log("Kieto");
-    }
-
-    public override void EstadoAtacar()
-    {
-        base.EstadoAtacar();
-        UnityEngine.Debug.Log("matando ando");
-    }
-
-    public override void EstadoMuerto()
-    {
-        base.EstadoMuerto();
-        UnityEngine.Debug.Log("muriendo endo");
-
-    }
-
-    public override void EstadoSeguir()
-    {
-        base.EstadoSeguir();
-        UnityEngine.Debug.Log("siguiendo endo");
-    }
-}
-
 [Serializable]
 public enum Estados
 {
@@ -167,4 +135,17 @@ public enum Estados
     attack  = 2,
     dead    = 3,
 }
+
+
+
+
+
+
+
+
+
+//Logica para comportamiento del enemigo.--------------------------------------------------------------
+
+
+
 
