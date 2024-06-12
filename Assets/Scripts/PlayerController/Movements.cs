@@ -5,7 +5,6 @@ using UnityEngine;
 public class Movements : MonoBehaviour
 {
     PlayerVariables playerVariables;
-    Animations animations;
     Rigidbody rb;
     public float mX;
     public float mZ;
@@ -16,13 +15,11 @@ public class Movements : MonoBehaviour
     private float dashTime;
     private bool isDashing;
     private float dashTimer;
-    [SerializeField] private bool canMove;
 
 
     void Start()
     {
         playerVariables = GetComponent<PlayerVariables>();
-        animations = GetComponent<Animations>();
         rb = GetComponent<Rigidbody>();
         Vr = playerVariables.rotationSpeed;
         dashForce = playerVariables.dashForce;
@@ -30,7 +27,6 @@ public class Movements : MonoBehaviour
         dashTime = playerVariables.dashTime;
         isDashing = playerVariables.isDashing;
         dashTimer = playerVariables.dashTimer;
-        canMove = true;
 
     }
 
@@ -42,17 +38,13 @@ public class Movements : MonoBehaviour
         
         if (Input.GetKeyDown(KeyCode.Space) && !isDashing && dashTimer <= 0 && unlockDash)
         {
-            animations.DashAnimation();
             StartCoroutine(StartDash());
         }
     }
 
     private void FixedUpdate()
     {
-        if (canMove)
-        {
-            Displacement(); 
-        }
+        Displacement();
         dashTimer -= Time.deltaTime; 
     }
 
@@ -84,20 +76,10 @@ public class Movements : MonoBehaviour
         yield return new WaitForSeconds(dashTime);
         isDashing = false;
         dashTimer = dashCooldown;
-        
     }
 
     public void UnlockDash()
     {
         unlockDash = true;
-    }
-
-    public void DontCanMove()
-    {
-        canMove = false;
-    }
-    public void CanMovePlayer()
-    {
-        canMove = true;
     }
 }
