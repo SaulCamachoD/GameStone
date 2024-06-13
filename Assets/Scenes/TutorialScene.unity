@@ -1496,19 +1496,23 @@ PrefabInstance:
       objectReference: {fileID: 847385625}
     - target: {fileID: 7347657238425164602, guid: 23a4922e2faed3d438c16318856f3418, type: 3}
       propertyPath: m_Height
-      value: 2.834096
+      value: 2.8340962
+      objectReference: {fileID: 0}
+    - target: {fileID: 7347657238425164602, guid: 23a4922e2faed3d438c16318856f3418, type: 3}
+      propertyPath: m_Radius
+      value: 0.52979153
       objectReference: {fileID: 0}
     - target: {fileID: 7347657238425164602, guid: 23a4922e2faed3d438c16318856f3418, type: 3}
       propertyPath: m_Center.x
-      value: -0.021355629
+      value: -0.07895774
       objectReference: {fileID: 0}
     - target: {fileID: 7347657238425164602, guid: 23a4922e2faed3d438c16318856f3418, type: 3}
       propertyPath: m_Center.y
-      value: 1.3238236
+      value: 1.3238233
       objectReference: {fileID: 0}
     - target: {fileID: 7347657238425164602, guid: 23a4922e2faed3d438c16318856f3418, type: 3}
       propertyPath: m_Center.z
-      value: 2.1694053e-11
+      value: -1.5722497e-10
       objectReference: {fileID: 0}
     - target: {fileID: 8361679082067932729, guid: 23a4922e2faed3d438c16318856f3418, type: 3}
       propertyPath: m_Name
@@ -1910,7 +1914,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   personaje: {fileID: 366438184}
   animations: {fileID: 366438178}
-  distanciaMaxima: 3
+  distanciaMaxima: 3.5
   CanPush: 0
   offsetDistancia: 2
 --- !u!54 &847385626
@@ -1999,15 +2003,15 @@ Transform:
   m_GameObject: {fileID: 847385623}
   serializedVersion: 2
   m_LocalRotation: {x: -0, y: -0.7071067, z: -0.7071068, w: 0}
-  m_LocalPosition: {x: 5.27, y: -1.19, z: 35.829998}
-  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_LocalPosition: {x: 2.44, y: 1.94, z: 73.44}
+  m_LocalScale: {x: 0.7552891, y: 0.7552891, z: 0.7552891}
   m_ConstrainProportionsScale: 0
   m_Children:
   - {fileID: 1547580110}
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!136 &847385630
-CapsuleCollider:
+--- !u!135 &847385630
+SphereCollider:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
@@ -2024,11 +2028,9 @@ CapsuleCollider:
   m_IsTrigger: 1
   m_ProvidesContacts: 0
   m_Enabled: 1
-  serializedVersion: 2
-  m_Radius: 2.933834
-  m_Height: 5.8676686
-  m_Direction: 1
-  m_Center: {x: 0.15541601, y: 0.08891273, z: 0.18515135}
+  serializedVersion: 3
+  m_Radius: 2.288506
+  m_Center: {x: -0.0008044243, y: 0.18215634, z: 0.8235502}
 --- !u!1 &873554109
 GameObject:
   m_ObjectHideFlags: 0
@@ -3582,14 +3584,14 @@ Transform:
   m_GameObject: {fileID: 1547580109}
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalPosition: {x: 0, y: 0, z: -0.614}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 847385629}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!136 &1547580111
-CapsuleCollider:
+--- !u!65 &1547580111
+BoxCollider:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
@@ -3606,11 +3608,9 @@ CapsuleCollider:
   m_IsTrigger: 0
   m_ProvidesContacts: 0
   m_Enabled: 1
-  serializedVersion: 2
-  m_Radius: 1.0543941
-  m_Height: 3.9502916
-  m_Direction: 1
-  m_Center: {x: 0, y: -0.03372312, z: 0.45474783}
+  serializedVersion: 3
+  m_Size: {x: 3.0609503, y: 2.3973188, z: 4.062918}
+  m_Center: {x: -0.028263254, y: 0.06028103, z: 1.3067057}
 --- !u!1 &1563062684
 GameObject:
   m_ObjectHideFlags: 0
