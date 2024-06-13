@@ -13,7 +13,6 @@ public class CheckPointCam : MonoBehaviour
         if(other.gameObject.name == "Player")
         {
             rotateCam.StartRotation45();
-            
         }
     }
         

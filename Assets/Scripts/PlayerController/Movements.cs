@@ -1,10 +1,12 @@
 using System.Collections;
 using System.Collections.Generic;
+using Unity.VisualScripting;
 using UnityEngine;
 
 public class Movements : MonoBehaviour
 {
     PlayerVariables playerVariables;
+    Animations animations;
     Rigidbody rb;
     public float mX;
     public float mZ;
@@ -15,11 +17,16 @@ public class Movements : MonoBehaviour
     private float dashTime;
     private bool isDashing;
     private float dashTimer;
+    [SerializeField] private bool canMove;
+    private float originalSpeed;
+
+    public GemaMovements gemaMovements;
 
 
     void Start()
     {
         playerVariables = GetComponent<PlayerVariables>();
+        animations = GetComponent<Animations>();
         rb = GetComponent<Rigidbody>();
         Vr = playerVariables.rotationSpeed;
         dashForce = playerVariables.dashForce;
@@ -27,7 +34,9 @@ public class Movements : MonoBehaviour
         dashTime = playerVariables.dashTime;
         isDashing = playerVariables.isDashing;
         dashTimer = playerVariables.dashTimer;
-
+        canMove = true;
+        originalSpeed = playerVariables.speed;
+        gemaMovements.OnPushStateChanged += HandlePushStateChanged;
     }
 
     void Update()
@@ -38,13 +47,17 @@ public class Movements : MonoBehaviour
         
         if (Input.GetKeyDown(KeyCode.Space) && !isDashing && dashTimer <= 0 && unlockDash)
         {
+            animations.DashAnimation();
             StartCoroutine(StartDash());
         }
     }
 
     private void FixedUpdate()
     {
-        Displacement();
+        if (canMove)
+        {
+            Displacement();
+        }
         dashTimer -= Time.deltaTime; 
     }
 
@@ -82,4 +95,32 @@ public class Movements : MonoBehaviour
     {
         unlockDash = true;
     }
+
+    public void DontCanMove()
+    {
+        canMove = false;
+    }
+
+    public void CanMovePlayer()
+    {
+        canMove = true;
+    }
+
+    private void HandlePushStateChanged(bool isPushing)
+    {
+        if (isPushing)
+        {
+            playerVariables.speed /= 2;  
+        }
+        else
+        {
+            playerVariables.speed = originalSpeed;  
+        }
+    }
+
+    //void OnDestroy()
+    //{
+       
+        //gemaMovements.OnPushStateChanged -= HandlePushStateChanged;
+    //}
 }

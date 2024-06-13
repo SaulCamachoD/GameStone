@@ -4,6 +4,7 @@ public class PointRotateCam : MonoBehaviour
 {
     private Quaternion startRotation;
     private Quaternion rotation45;
+    private Quaternion rotation135;
     private Quaternion rotation90;
     private Quaternion endRotation;
     private bool isRotating = false;
@@ -15,7 +16,8 @@ public class PointRotateCam : MonoBehaviour
     {
         startRotation = Quaternion.Euler(30, -45, 0);
         rotation45 = Quaternion.Euler(30, 45, 0);
-        rotation90 = Quaternion.Euler(30, 135, 0);
+        rotation135 = Quaternion.Euler(30, 135, 0);
+        rotation90 = Quaternion.Euler(30, -90, 0);
         transform.rotation = startRotation;
     }
 
@@ -30,7 +32,7 @@ public class PointRotateCam : MonoBehaviour
             if (rotationTime >= 1.0f)
             {
                 isRotating = false;
-                rotationTime = 0.0f; // Reinicia el tiempo de rotación
+                rotationTime = 0.0f; 
             }
         }
     }
@@ -46,6 +48,17 @@ public class PointRotateCam : MonoBehaviour
         }
     }
 
+    public void StartRotation135()
+    {
+        if (!isAtRotation(rotation135))
+        {
+            isRotating = true;
+            rotatingForward = true;
+            rotationTime = 0.0f;
+            endRotation = rotation135;
+        }
+    }
+    
     public void StartRotation90()
     {
         if (!isAtRotation(rotation90))
@@ -64,7 +77,7 @@ public class PointRotateCam : MonoBehaviour
             isRotating = true;
             rotatingForward = false;
             rotationTime = 0.0f;
-            endRotation = transform.rotation; // Establece endRotation a la rotación actual
+            endRotation = transform.rotation; 
         }
     }
 

@@ -3,16 +3,39 @@ using System.Collections.Generic;
 using UnityEngine;
 
 public class Animations : MonoBehaviour
-{
-    // Start is called before the first frame update
+{   
+    public Animator animator;   
+    PlayerVariables playerVariables;
     void Start()
     {
-        
+        playerVariables = GetComponent<PlayerVariables>();
     }
-
-    // Update is called once per frame
     void Update()
     {
+        animator.SetFloat("VelZ", playerVariables.movInZ);
+        animator.SetFloat("VelX", playerVariables.movInX);
+        if (Input.GetMouseButtonDown(0))
+        {
+            animator.SetTrigger("Attack");
+        }
         
+        if (Input.GetMouseButtonDown(1))
+        {
+            animator.SetTrigger("Spell");
+        }
+    }
+
+    public void DashAnimation()
+    {
+        animator.SetTrigger("Dash");
+    }
+
+    public void PushanimationActive()
+    {
+        animator.SetBool("Push",true);
+    }
+    public void PushanimationDesActive()
+    {
+        animator.SetBool("Push",false);
     }
 }

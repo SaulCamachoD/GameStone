@@ -10,7 +10,7 @@ public class CheckPointCamC : MonoBehaviour
     {
         if (other.gameObject.name == "Player")
         {
-            rotateCam.StartRotation90();
+            rotateCam.StartRotation135();
 
         }
     }
