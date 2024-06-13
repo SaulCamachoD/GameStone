@@ -16521,6 +16521,18 @@ PrefabInstance:
       value: Boss_idle (1)
       objectReference: {fileID: 0}
     - target: {fileID: 870406626802948577, guid: 3f11750b77e9cb442a197349617164fd, type: 3}
+      propertyPath: m_LocalScale.x
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 870406626802948577, guid: 3f11750b77e9cb442a197349617164fd, type: 3}
+      propertyPath: m_LocalScale.y
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 870406626802948577, guid: 3f11750b77e9cb442a197349617164fd, type: 3}
+      propertyPath: m_LocalScale.z
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 870406626802948577, guid: 3f11750b77e9cb442a197349617164fd, type: 3}
       propertyPath: m_LocalPosition.x
       value: 115.18
       objectReference: {fileID: 0}
