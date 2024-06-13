@@ -3,7 +3,6 @@ using System.Collections.Generic;
 using UnityEngine;
 using System.Diagnostics;
 using System;
-using UnityEngine.AI;
 using Debug = UnityEngine.Debug;
 
 
@@ -28,7 +27,6 @@ public abstract class EnemyCharacter : ScriptableObject
     {
         target = transformTarget;
     }
-    // ReSharper disable Unity.PerformanceAnalysis
     public void CheckEstado()
     {
         switch (estado)
@@ -95,16 +93,19 @@ public abstract class EnemyCharacter : ScriptableObject
     {
         
     }
-
    public IEnumerator CalculateDistance(Transform posicionenemigo)
     {
+        Debug.Log("entro al enumerator");
         while (vivo)
         {
+            Debug.Log("si esta vivo");
             if (target)
             {
+                Debug.Log("reconoce el target");
                 distancia = Vector3.Distance(posicionenemigo.position ,target.transform.position);
                 yield return new WaitForSeconds(0.3f);
             }
+            
         }
     }
    
@@ -144,7 +145,7 @@ public enum Estados
 
 
 
-//Logica para comportamiento del enemigo.--------------------------------------------------------------
+
 
 
 

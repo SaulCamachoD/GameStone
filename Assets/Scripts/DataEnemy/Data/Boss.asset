@@ -10,12 +10,12 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 266e2c35c06534d4db62d17e78dc67bf, type: 3}
-  m_Name: Enemigo
+  m_Name: Boss
   m_EditorClassIdentifier: 
   estado: 0
-  distanciaSeguir: 4
-  distanciaAtacar: 2
-  distanciaEscapar: 6
+  distanciaSeguir: 0
+  distanciaAtacar: 0
+  distanciaEscapar: 0
   target: {fileID: 0}
-  distancia: 21.902857
+  distancia: 0
   vivo: 1
