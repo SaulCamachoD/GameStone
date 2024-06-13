@@ -12,6 +12,7 @@ public class EnemyOne : MonoBehaviour
     public EnemyProPlayer enemyProPlayer;
     public Transform player;
     public NavMeshAgent agent;
+    public Animator animator;
     void Awake()
     {
         agent = GetComponent<NavMeshAgent>();
@@ -20,7 +21,7 @@ public class EnemyOne : MonoBehaviour
     void Start()
     {
         enemyProPlayer.Position(player);
-        enemyProPlayer.Initialize(agent);
+        enemyProPlayer.Initialize(agent , animator);
         StartCoroutine(enemyProPlayer.CalculateDistance(transform));
     }
     private void LateUpdate()

@@ -5,13 +5,12 @@ using UnityEngine.AI;
 public class EnemyProPlayer : EnemyCharacter
 
 {
-
+    private Animator _animator;
     private NavMeshAgent _agent;
-
-
-    public void Initialize(NavMeshAgent agent)
+    public void Initialize(NavMeshAgent agent, Animator animation)
     {
         _agent = agent;
+        _animator = animation;
     }
     public override void EstadoIdle()
     {
@@ -30,11 +29,13 @@ public class EnemyProPlayer : EnemyCharacter
         base.EstadoAtacar();
         _agent.SetDestination(_agent.transform.position);
         _agent.transform.LookAt(target,Vector3.up);
+        _animator.SetBool("Attack", true);
     }
     public override void EstadoMuerto()
     {
         base.EstadoMuerto();
         _agent.enabled = false;
+        _animator.SetBool("Died" , true);
         //UnityEngine.Debug.Log("muriendo endo");
     }
     
