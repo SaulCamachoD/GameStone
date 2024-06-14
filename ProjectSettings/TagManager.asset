@@ -13,6 +13,8 @@ TagManager:
   - PauseMenu
   - GameOverMenu
   - HudManager
+  - Gema
+  - armaImpacto
   layers:
   - Default
   - TransparentFX
