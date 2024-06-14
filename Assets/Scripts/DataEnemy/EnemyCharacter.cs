@@ -27,7 +27,7 @@ public abstract class EnemyCharacter : ScriptableObject
     {
         target = transformTarget;
     }
-    public void CheckEstado()
+    public void CheckEstado(Transform enemy)
     {
         switch (estado)
         {
@@ -35,6 +35,7 @@ public abstract class EnemyCharacter : ScriptableObject
                 EstadoIdle();
                 break;
             case Estados.seguir:
+                enemy.transform.LookAt(target,Vector3.up);
                 EstadoSeguir();
                 break;
             case Estados.attack:

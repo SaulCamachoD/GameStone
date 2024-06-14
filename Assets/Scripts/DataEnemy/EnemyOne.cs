@@ -27,7 +27,7 @@ public class EnemyOne : MonoBehaviour
     private void LateUpdate()
     {
         
-        enemyProPlayer.CheckEstado();
+        enemyProPlayer.CheckEstado(transform);
         
     }
 #if UNITY_EDITOR

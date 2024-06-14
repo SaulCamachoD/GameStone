@@ -29,7 +29,7 @@ public class EnemyProPlayer : EnemyCharacter
     {
         base.EstadoAtacar();
         _agent.SetDestination(_agent.transform.position);
-        _agent.transform.LookAt(target,Vector3.forward);
+        _agent.transform.LookAt(target,Vector3.up);
       
     }
     public override void EstadoMuerto()
