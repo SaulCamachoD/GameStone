@@ -1,5 +1,5 @@
 fileFormatVersion: 2
-guid: 37a01099bb802a94d8f059a8a2cd889a
+guid: 1e58f184811f69b47985edbce738bb8c
 ModelImporter:
   serializedVersion: 22200
   internalIDToNameTable: []
@@ -31,36 +31,7 @@ ModelImporter:
     animationWrapMode: 0
     extraExposedTransformPaths: []
     extraUserProperties: []
-    clipAnimations:
-    - serializedVersion: 16
-      name: Idle
-      takeName: mixamo.com
-      internalID: -203655887218126122
-      firstFrame: 0
-      lastFrame: 341
-      wrapMode: 0
-      orientationOffsetY: 0
-      level: 0
-      cycleOffset: 0
-      loop: 0
-      hasAdditiveReferencePose: 0
-      loopTime: 1
-      loopBlend: 1
-      loopBlendOrientation: 0
-      loopBlendPositionY: 0
-      loopBlendPositionXZ: 0
-      keepOriginalOrientation: 0
-      keepOriginalPositionY: 1
-      keepOriginalPositionXZ: 0
-      heightFromFeet: 0
-      mirror: 0
-      bodyMask: 01000000010000000100000001000000010000000100000001000000010000000100000001000000010000000100000001000000
-      curves: []
-      events: []
-      transformMask: []
-      maskType: 3
-      maskSource: {instanceID: 0}
-      additiveReferencePoseFrame: 0
+    clipAnimations: []
     isReadable: 0
   meshes:
     lODScreenPercentages: []
@@ -106,14 +77,7 @@ ModelImporter:
     legacyComputeAllNormalsFromSmoothingGroupsWhenMeshHasBlendShapes: 0
     blendShapeNormalImportMode: 1
     normalSmoothingSource: 0
-  referencedClips:
-  - d2f09eb9611bb524da824cacbdcf483c
-  - 1e58f184811f69b47985edbce738bb8c
-  - 614c19cb2fca25f4cbf57157bf88d571
-  - 097db15f48c6ae341b48a4e2596cb248
-  - f88e0eb242163624386f18461d9948e0
-  - 81da49a6ef2614e4f97b0cbb877c612d
-  - 117ed9825949d174a98b897ffc36dcdf
+  referencedClips: []
   importAnimation: 1
   humanDescription:
     serializedVersion: 3
