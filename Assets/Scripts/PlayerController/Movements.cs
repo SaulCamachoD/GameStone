@@ -36,7 +36,7 @@ public class Movements : MonoBehaviour
         dashTimer = playerVariables.dashTimer;
         canMove = true;
         originalSpeed = playerVariables.speed;
-        gemaMovements.OnPushStateChanged += HandlePushStateChanged;
+        //gemaMovements.OnPushStateChanged += HandlePushStateChanged;
     }
 
     void Update()
