@@ -13,9 +13,9 @@ MonoBehaviour:
   m_Name: EnemigoMuelas
   m_EditorClassIdentifier: 
   estado: 0
-  distanciaSeguir: 0
-  distanciaAtacar: 0
-  distanciaEscapar: 0
+  distanciaSeguir: 3
+  distanciaAtacar: 2
+  distanciaEscapar: 5
   target: {fileID: 0}
-  distancia: 0
+  distancia: 22.549822
   vivo: 1

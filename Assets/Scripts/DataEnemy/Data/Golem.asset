@@ -12,10 +12,10 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 266e2c35c06534d4db62d17e78dc67bf, type: 3}
   m_Name: Golem
   m_EditorClassIdentifier: 
-  estado: 0
-  distanciaSeguir: 0
+  estado: 1
+  distanciaSeguir: 8
   distanciaAtacar: 0
-  distanciaEscapar: 0
+  distanciaEscapar: 9
   target: {fileID: 0}
-  distancia: 0
+  distancia: 1.5802351
   vivo: 1

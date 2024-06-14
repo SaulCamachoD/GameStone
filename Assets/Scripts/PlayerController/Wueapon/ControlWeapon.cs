@@ -8,21 +8,21 @@ public class ControlWeapon : MonoBehaviour
     private int _currentIndex;
     void Update()
     {
+        //if (Input.GetKeyDown(KeyCode.Q))
+        //{
+            //Debug.Log("Disparaste");
+          //  PlayerVariables.instance.currentWeapon?.Use(transform.forward);
+            
+        //}
+
         if (Input.GetKeyDown(KeyCode.Q))
         {
-            Debug.Log("Disparaste");
-            PlayerVariables.instance.currentWeapon?.Use(transform.forward);
-            
+           PlayerVariables.instance.NextWeapon();
         }
 
-        if (Input.GetKeyDown(KeyCode.T))
+        if (Input.GetKeyDown(KeyCode.E))
         {
-            PlayerVariables.instance.NextWeapon();
-        }
-
-        if (Input.GetKeyDown(KeyCode.Y))
-        {
-            PlayerVariables.instance.PrevWeapon();
+           PlayerVariables.instance.PrevWeapon();
         }
     }
 }

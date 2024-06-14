@@ -22,20 +22,21 @@ public class EnemyProPlayer : EnemyCharacter
     {
         base.EstadoSeguir();
         _agent.SetDestination(target.transform.position);
+        
         //UnityEngine.Debug.Log("siguiendo endo");
     }
     public override void EstadoAtacar()
     {
         base.EstadoAtacar();
         _agent.SetDestination(_agent.transform.position);
-        _agent.transform.LookAt(target,Vector3.up);
-        _animator.SetBool("Attack", true);
+        _agent.transform.LookAt(target,Vector3.forward);
+      
     }
     public override void EstadoMuerto()
     {
         base.EstadoMuerto();
         _agent.enabled = false;
-        _animator.SetBool("Died" , true);
+        
         //UnityEngine.Debug.Log("muriendo endo");
     }
     

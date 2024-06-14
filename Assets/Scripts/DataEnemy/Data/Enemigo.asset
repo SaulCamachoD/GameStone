@@ -13,9 +13,9 @@ MonoBehaviour:
   m_Name: Enemigo
   m_EditorClassIdentifier: 
   estado: 0
-  distanciaSeguir: 4
-  distanciaAtacar: 0
-  distanciaEscapar: 0
+  distanciaSeguir: 8
+  distanciaAtacar: 2
+  distanciaEscapar: 9
   target: {fileID: 0}
-  distancia: 86.56045
+  distancia: 14.418391
   vivo: 1
