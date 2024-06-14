@@ -12,7 +12,7 @@ public class CollisionVida : MonoBehaviour
 
     private void OnTriggerEnter(Collider other)
     {
-        if (other.gameObject.CompareTag("armaImpacto"))
+        if (other.gameObject.CompareTag("armaImpactos"))
         {
             if (anim !=null)
             {
