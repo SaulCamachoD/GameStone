@@ -17,5 +17,5 @@ MonoBehaviour:
   distanciaAtacar: 2
   distanciaEscapar: 31
   target: {fileID: 0}
-  distancia: 6.373966
+  distancia: 26.150558
   vivo: 1

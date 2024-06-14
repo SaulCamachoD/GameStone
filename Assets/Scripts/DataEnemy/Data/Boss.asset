@@ -12,10 +12,10 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 266e2c35c06534d4db62d17e78dc67bf, type: 3}
   m_Name: Boss
   m_EditorClassIdentifier: 
-  estado: 2
+  estado: 1
   distanciaSeguir: 60
   distanciaAtacar: 8
   distanciaEscapar: 61
   target: {fileID: 0}
-  distancia: 6.626383
+  distancia: 12.712573
   vivo: 1
