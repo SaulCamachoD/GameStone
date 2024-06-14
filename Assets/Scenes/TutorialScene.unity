@@ -817,6 +817,63 @@ MeshFilter:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 358509613}
   m_Mesh: {fileID: 10202, guid: 0000000000000000e000000000000000, type: 0}
+--- !u!1001 &363184371
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    serializedVersion: 3
+    m_TransformParent: {fileID: 0}
+    m_Modifications:
+    - target: {fileID: 3332972836838696180, guid: 9b2b5cb972ac9e54f872a2ed65e50003, type: 3}
+      propertyPath: m_LocalPosition.x
+      value: -15.12
+      objectReference: {fileID: 0}
+    - target: {fileID: 3332972836838696180, guid: 9b2b5cb972ac9e54f872a2ed65e50003, type: 3}
+      propertyPath: m_LocalPosition.y
+      value: 0.29
+      objectReference: {fileID: 0}
+    - target: {fileID: 3332972836838696180, guid: 9b2b5cb972ac9e54f872a2ed65e50003, type: 3}
+      propertyPath: m_LocalPosition.z
+      value: 36.91
+      objectReference: {fileID: 0}
+    - target: {fileID: 3332972836838696180, guid: 9b2b5cb972ac9e54f872a2ed65e50003, type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 0.7071067
+      objectReference: {fileID: 0}
+    - target: {fileID: 3332972836838696180, guid: 9b2b5cb972ac9e54f872a2ed65e50003, type: 3}
+      propertyPath: m_LocalRotation.x
+      value: -0.7071068
+      objectReference: {fileID: 0}
+    - target: {fileID: 3332972836838696180, guid: 9b2b5cb972ac9e54f872a2ed65e50003, type: 3}
+      propertyPath: m_LocalRotation.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 3332972836838696180, guid: 9b2b5cb972ac9e54f872a2ed65e50003, type: 3}
+      propertyPath: m_LocalRotation.z
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 3332972836838696180, guid: 9b2b5cb972ac9e54f872a2ed65e50003, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 3332972836838696180, guid: 9b2b5cb972ac9e54f872a2ed65e50003, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 3332972836838696180, guid: 9b2b5cb972ac9e54f872a2ed65e50003, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7830429367212778675, guid: 9b2b5cb972ac9e54f872a2ed65e50003, type: 3}
+      propertyPath: m_Name
+      value: Letrero_B (2)
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+    m_RemovedGameObjects: []
+    m_AddedGameObjects: []
+    m_AddedComponents: []
+  m_SourcePrefab: {fileID: 100100000, guid: 9b2b5cb972ac9e54f872a2ed65e50003, type: 3}
 --- !u!114 &366438178 stripped
 MonoBehaviour:
   m_CorrespondingSourceObject: {fileID: 5367758169497129977, guid: 23a4922e2faed3d438c16318856f3418, type: 3}
@@ -859,6 +916,63 @@ BoxCollider:
   serializedVersion: 3
   m_Size: {x: 2.767902, y: 3.4002573, z: 39.435852}
   m_Center: {x: 0.12709735, y: -0.39532313, z: 0}
+--- !u!1001 &384271295
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    serializedVersion: 3
+    m_TransformParent: {fileID: 0}
+    m_Modifications:
+    - target: {fileID: 3332972836838696180, guid: 9b2b5cb972ac9e54f872a2ed65e50003, type: 3}
+      propertyPath: m_LocalPosition.x
+      value: -16.82251
+      objectReference: {fileID: 0}
+    - target: {fileID: 3332972836838696180, guid: 9b2b5cb972ac9e54f872a2ed65e50003, type: 3}
+      propertyPath: m_LocalPosition.y
+      value: 0.29
+      objectReference: {fileID: 0}
+    - target: {fileID: 3332972836838696180, guid: 9b2b5cb972ac9e54f872a2ed65e50003, type: 3}
+      propertyPath: m_LocalPosition.z
+      value: 19.419203
+      objectReference: {fileID: 0}
+    - target: {fileID: 3332972836838696180, guid: 9b2b5cb972ac9e54f872a2ed65e50003, type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 0.7071067
+      objectReference: {fileID: 0}
+    - target: {fileID: 3332972836838696180, guid: 9b2b5cb972ac9e54f872a2ed65e50003, type: 3}
+      propertyPath: m_LocalRotation.x
+      value: -0.7071068
+      objectReference: {fileID: 0}
+    - target: {fileID: 3332972836838696180, guid: 9b2b5cb972ac9e54f872a2ed65e50003, type: 3}
+      propertyPath: m_LocalRotation.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 3332972836838696180, guid: 9b2b5cb972ac9e54f872a2ed65e50003, type: 3}
+      propertyPath: m_LocalRotation.z
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 3332972836838696180, guid: 9b2b5cb972ac9e54f872a2ed65e50003, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 3332972836838696180, guid: 9b2b5cb972ac9e54f872a2ed65e50003, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 3332972836838696180, guid: 9b2b5cb972ac9e54f872a2ed65e50003, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7830429367212778675, guid: 9b2b5cb972ac9e54f872a2ed65e50003, type: 3}
+      propertyPath: m_Name
+      value: Letrero_B (1)
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+    m_RemovedGameObjects: []
+    m_AddedGameObjects: []
+    m_AddedComponents: []
+  m_SourcePrefab: {fileID: 100100000, guid: 9b2b5cb972ac9e54f872a2ed65e50003, type: 3}
 --- !u!1 &415926348 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: -7640558969779515294, guid: 17c7ead5a2536914c9e790b23f2e3900, type: 3}
@@ -5434,3 +5548,5 @@ SceneRoots:
   - {fileID: 432642745}
   - {fileID: 847385629}
   - {fileID: 1677645022}
+  - {fileID: 384271295}
+  - {fileID: 363184371}
