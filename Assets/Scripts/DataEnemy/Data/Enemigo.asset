@@ -12,10 +12,10 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 266e2c35c06534d4db62d17e78dc67bf, type: 3}
   m_Name: Enemigo
   m_EditorClassIdentifier: 
-  estado: 0
-  distanciaSeguir: 8
+  estado: 1
+  distanciaSeguir: 30
   distanciaAtacar: 2
-  distanciaEscapar: 9
+  distanciaEscapar: 31
   target: {fileID: 0}
-  distancia: 14.418391
+  distancia: 6.373966
   vivo: 1

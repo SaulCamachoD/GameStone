@@ -10,12 +10,12 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 266e2c35c06534d4db62d17e78dc67bf, type: 3}
-  m_Name: Golem
+  m_Name: Muelas
   m_EditorClassIdentifier: 
-  estado: 2
-  distanciaSeguir: 30
-  distanciaAtacar: 2
-  distanciaEscapar: 31
+  estado: 0
+  distanciaSeguir: 5
+  distanciaAtacar: 5
+  distanciaEscapar: 6
   target: {fileID: 0}
-  distancia: 0.8414082
+  distancia: 12.601311
   vivo: 1
