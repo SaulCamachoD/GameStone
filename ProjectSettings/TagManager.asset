@@ -15,6 +15,7 @@ TagManager:
   - HudManager
   - Gema
   - armaImpacto
+  - FinalMenu
   layers:
   - Default
   - TransparentFX

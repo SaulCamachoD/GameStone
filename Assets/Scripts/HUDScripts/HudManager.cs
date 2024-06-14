@@ -5,13 +5,18 @@ public class HudManager : MonoBehaviour
 {
 
     GameObject GameOverMenu;
+    GameObject FinalMenu;
     Controller_GO controller_Go;
+    ControllerFinal ControllerFinal;
     void Start()
     {
         controller_Go = GameObject.FindGameObjectWithTag("GameOverMenu").GetComponent<Controller_GO>();
         GameOverMenu = GameObject.FindGameObjectWithTag("GameOverMenu");
+        ControllerFinal = GameObject.FindGameObjectWithTag("FinalMenu").GetComponent<ControllerFinal>();
+        FinalMenu = GameObject.FindGameObjectWithTag("FinalMenu");
 
         GameOverMenu.SetActive(false);
+        FinalMenu.SetActive(false);
     }
 
 
@@ -23,6 +28,13 @@ public class HudManager : MonoBehaviour
         }
 
 
+    }
+
+    public void ActiveFinalMenu()
+    {
+        FinalMenu.SetActive(true);
+        ControllerFinal.InicializedControllerGo();
+        Time.timeScale = 0.0f;
     }
 
 

@@ -133,6 +133,8 @@ MonoBehaviour:
   "da\xF1oArma": 0
   "da\xF1oPu\xF1o": 0
   anim: {fileID: 8513148876843913394}
+  Gema: {fileID: 0}
+  bossDoor: {fileID: 0}
 --- !u!1001 &4966314966741281381
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -155,19 +157,19 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 4891403206776040227, guid: 174b66d9a3e2e814899775d6c601b278, type: 3}
       propertyPath: m_LocalRotation.w
-      value: 0.7140275
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 4891403206776040227, guid: 174b66d9a3e2e814899775d6c601b278, type: 3}
       propertyPath: m_LocalRotation.x
-      value: -0
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 4891403206776040227, guid: 174b66d9a3e2e814899775d6c601b278, type: 3}
       propertyPath: m_LocalRotation.y
-      value: 0.70011765
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 4891403206776040227, guid: 174b66d9a3e2e814899775d6c601b278, type: 3}
       propertyPath: m_LocalRotation.z
-      value: -0
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 4891403206776040227, guid: 174b66d9a3e2e814899775d6c601b278, type: 3}
       propertyPath: m_LocalEulerAnglesHint.x
@@ -175,7 +177,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 4891403206776040227, guid: 174b66d9a3e2e814899775d6c601b278, type: 3}
       propertyPath: m_LocalEulerAnglesHint.y
-      value: 88.873
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 4891403206776040227, guid: 174b66d9a3e2e814899775d6c601b278, type: 3}
       propertyPath: m_LocalEulerAnglesHint.z

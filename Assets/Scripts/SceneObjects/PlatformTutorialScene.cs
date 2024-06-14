@@ -9,7 +9,6 @@ public class PlatformTutorialScene : MonoBehaviour
     private Vector3 closedPosition;
     private Vector3 openPosition;
     private bool isOpening = false;
-    private bool isClosing = false;
 
     void Start()
     {
@@ -33,7 +32,6 @@ public class PlatformTutorialScene : MonoBehaviour
     public void OpenDoor()
     {
         isOpening = true;
-        isClosing = false;
     }
 
 }

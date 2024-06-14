@@ -9,6 +9,8 @@ public class CollisionVida : MonoBehaviour
     public int dañoArma;
     public int dañoPuño;
     public Animator anim;
+    public GameObject Gema;
+    public BossDoor bossDoor;
 
     private void OnTriggerEnter(Collider other)
     {
@@ -23,6 +25,8 @@ public class CollisionVida : MonoBehaviour
         if (hp < 0)
         {
             Destroy(gameObject);
+            Gema.SetActive(true);
+            bossDoor.ActiveDoorEvent();
         }
     }
 }
