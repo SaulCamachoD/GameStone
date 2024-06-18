@@ -10,6 +10,7 @@ public class Animations : MonoBehaviour
     public float distanceCooldown = 2f;
     private bool canMeleeAttack = true;
     private bool canDistanceAttack = true;
+    
 
     void Start()
     {
