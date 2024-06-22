@@ -523,9 +523,6 @@ PrefabInstance:
       addedObject: {fileID: 813745902403232712}
     - targetCorrespondingSourceObject: {fileID: 919132149155446097, guid: 2799146c8bba8c14698ee0e7056202cd, type: 3}
       insertIndex: -1
-      addedObject: {fileID: 8660726968555863703}
-    - targetCorrespondingSourceObject: {fileID: 919132149155446097, guid: 2799146c8bba8c14698ee0e7056202cd, type: 3}
-      insertIndex: -1
       addedObject: {fileID: 5367758169497129977}
     - targetCorrespondingSourceObject: {fileID: 919132149155446097, guid: 2799146c8bba8c14698ee0e7056202cd, type: 3}
       insertIndex: -1
@@ -589,6 +586,9 @@ MonoBehaviour:
   dashTimer: 0
   isDashing: 0
   unLockDash: 0
+  projectilePrefab: {fileID: 0}
+  shootPoint: {fileID: 0}
+  weaponObjec: {fileID: 0}
 --- !u!114 &1435001939401795093
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -622,19 +622,6 @@ MonoBehaviour:
   isPlayerResetting: 0
   ZonaBoss: 0
   restoreItems: {fileID: 0}
---- !u!114 &8660726968555863703
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 8361679082067932729}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 8102126e5bf01044ca93400491ed0060, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  health: 100
 --- !u!114 &5367758169497129977
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -648,6 +635,9 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   animator: {fileID: 9161265634500117458}
+  meleeCooldown: 1
+  distanceCooldown: 2
+  swordVFX: {fileID: 0}
 --- !u!136 &7347657238425164602
 CapsuleCollider:
   m_ObjectHideFlags: 0

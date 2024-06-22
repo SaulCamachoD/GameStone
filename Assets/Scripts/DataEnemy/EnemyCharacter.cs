@@ -19,6 +19,7 @@ public abstract class EnemyCharacter : ScriptableObject
     public float distanciaEscapar;
     public Transform target;
     public float distancia;
+    public int daño;
    
 
     public bool vivo = true;
@@ -103,12 +104,14 @@ public abstract class EnemyCharacter : ScriptableObject
             if (target)
             {
                 Debug.Log("reconoce el target");
+                yield return new WaitForSeconds(0.2f);
                 distancia = Vector3.Distance(posicionenemigo.position ,target.transform.position);
-                yield return new WaitForSeconds(0.3f);
+                
             }
             
         }
     }
+   
    
 #if UNITY_EDITOR
     public void OnDrawGuizmosSelected(Transform enemy)

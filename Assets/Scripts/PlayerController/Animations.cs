@@ -1,6 +1,7 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.VFX;
 
 public class Animations : MonoBehaviour
 {   
@@ -10,6 +11,7 @@ public class Animations : MonoBehaviour
     public float distanceCooldown = 2f;
     private bool canMeleeAttack = true;
     private bool canDistanceAttack = true;
+    public VisualEffect swordVFX;
     
 
     void Start()
@@ -39,6 +41,12 @@ public class Animations : MonoBehaviour
                 animator.SetTrigger("Attack");
                 playerVariables.currentWeapon.Use(transform.forward);
                 StartCoroutine(MeleeAttackCooldown());
+                if (swordVFX)
+                {
+                    swordVFX.gameObject.SetActive(true);
+                    swordVFX.SetBool("UseForce",true);
+                    StartCoroutine(DeactivateVFXAfterDelay(2f));
+                }
             }
         }
         
@@ -49,10 +57,16 @@ public class Animations : MonoBehaviour
                 animator.SetTrigger("Spell");
                 playerVariables.currentWeapon.Use(transform.forward);
                 StartCoroutine(DistanceAttackCooldown());
+               
             }
         }
     }
-
+    IEnumerator DeactivateVFXAfterDelay(float delay)
+    {
+        swordVFX.SetBool("UseForce",false);
+        yield return new WaitForSeconds(delay);
+        swordVFX.gameObject.SetActive(false);
+    }
     public void DashAnimation()
     {
         animator.SetTrigger("Dash");

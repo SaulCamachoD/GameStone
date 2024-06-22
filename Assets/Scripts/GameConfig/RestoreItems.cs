@@ -4,7 +4,7 @@ using UnityEngine;
 
 public class RestoreItems : MonoBehaviour
 {
-    public Attack attack;
+    public SystemLife attack;
     void Start()
     {
 

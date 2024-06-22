@@ -19,13 +19,13 @@ public class PlayerLoctions : MonoBehaviour
     public RestoreItems restoreItems;
     PlayerVariables playerVariables;
 
-    Attack attack;
+    SystemLife attack;
     void Start()
     {
         Xinicial = transform.position.x;
         Yinicial = transform.position.y;
         Zinicial = transform.position.z;
-        attack = GetComponent<Attack>();
+        attack = GetComponent<SystemLife>();
         playerVariables = GetComponent<PlayerVariables>();  
 
     }

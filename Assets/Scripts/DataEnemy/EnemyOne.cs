@@ -13,6 +13,8 @@ public class EnemyOne : MonoBehaviour
     public Transform player;
     public NavMeshAgent agent;
     public Animator animator;
+    public float congelarDuracion = 0.05f; 
+    private bool congelarTiempo = false;
     void Awake()
     {
         agent = GetComponent<NavMeshAgent>();
@@ -20,6 +22,7 @@ public class EnemyOne : MonoBehaviour
     }
     void Start()
     {
+      
         enemyProPlayer.Position(player);
         enemyProPlayer.Initialize(agent , animator);
         StartCoroutine(enemyProPlayer.CalculateDistance(transform));
@@ -28,7 +31,6 @@ public class EnemyOne : MonoBehaviour
     {
         
         enemyProPlayer.CheckEstado(transform);
-        
     }
 #if UNITY_EDITOR
     private void OnDrawGizmos()
@@ -36,6 +38,19 @@ public class EnemyOne : MonoBehaviour
         enemyProPlayer.OnDrawGuizmosSelected(transform) ;
     }
 #endif
-     
+    public void Ataque()
+    {
+        enemyProPlayer.Attack();
+        StartCoroutine(Congelamiento());
+
+    }
+
+    public IEnumerator Congelamiento()
+    {
+        Time.timeScale = congelarDuracion;
+        //Time.fixedDeltaTime = congelarDuracion * Time.deltaTime;
+        yield return new WaitForSecondsRealtime(0.2f);
+        Time.timeScale = 1;
+    }
 }
 

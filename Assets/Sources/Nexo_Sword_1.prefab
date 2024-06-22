@@ -48,33 +48,41 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 4089093744883700100, guid: fa612b225782ece47a4add46c98efc12, type: 3}
+      propertyPath: m_Enabled
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 4539772140131490339, guid: fa612b225782ece47a4add46c98efc12, type: 3}
       propertyPath: m_PropertySheet.m_Vector3f.m_Array.Array.data[0].m_Value.x
-      value: 103.650894
+      value: -34.331112
       objectReference: {fileID: 0}
     - target: {fileID: 4539772140131490339, guid: fa612b225782ece47a4add46c98efc12, type: 3}
       propertyPath: m_PropertySheet.m_Vector3f.m_Array.Array.data[0].m_Value.y
-      value: 8.255116
+      value: 3.925116
       objectReference: {fileID: 0}
     - target: {fileID: 4539772140131490339, guid: fa612b225782ece47a4add46c98efc12, type: 3}
       propertyPath: m_PropertySheet.m_Vector3f.m_Array.Array.data[0].m_Value.z
-      value: 39.082813
+      value: -88.65719
       objectReference: {fileID: 0}
     - target: {fileID: 4539772140131490339, guid: fa612b225782ece47a4add46c98efc12, type: 3}
       propertyPath: m_PropertySheet.m_Vector3f.m_Array.Array.data[1].m_Value.x
-      value: 104.95936
+      value: -33.022644
       objectReference: {fileID: 0}
     - target: {fileID: 4539772140131490339, guid: fa612b225782ece47a4add46c98efc12, type: 3}
       propertyPath: m_PropertySheet.m_Vector3f.m_Array.Array.data[1].m_Value.y
-      value: 8.343796
+      value: 4.0137954
       objectReference: {fileID: 0}
     - target: {fileID: 4539772140131490339, guid: fa612b225782ece47a4add46c98efc12, type: 3}
       propertyPath: m_PropertySheet.m_Vector3f.m_Array.Array.data[1].m_Value.z
-      value: 38.459408
+      value: -89.280594
       objectReference: {fileID: 0}
     - target: {fileID: 5302557787689932283, guid: fa612b225782ece47a4add46c98efc12, type: 3}
       propertyPath: m_Name
       value: Slash
+      objectReference: {fileID: 0}
+    - target: {fileID: 5302557787689932283, guid: fa612b225782ece47a4add46c98efc12, type: 3}
+      propertyPath: m_IsActive
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 7163435954265850647, guid: fa612b225782ece47a4add46c98efc12, type: 3}
       propertyPath: m_LocalPosition.x

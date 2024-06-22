@@ -5,7 +5,7 @@ using UnityEngine;
 public class PlayerVariables : MonoBehaviour
 {
     Movements movements;
-    Attack attack;
+    SystemLife attack;
     PlayerLoctions playerLoctions;
     [Header("Movement")]
     public float speed = 5f;
@@ -61,7 +61,7 @@ public class PlayerVariables : MonoBehaviour
         _WeaponCollider = weaponObjec.GetComponent<Collider>();
         
         movements = GetComponent<Movements>();
-        attack = GetComponent<Attack>();
+        attack = GetComponent<SystemLife>();
         playerLoctions = GetComponent<PlayerLoctions>();
         
         weapons.Add(new WeaponDistance(20));
@@ -86,7 +86,7 @@ public class PlayerVariables : MonoBehaviour
         movInX = movements.mX;
         movInZ = movements.mZ;
         unLockDash = movements.unlockDash;
-        health = attack.health;
+        //health = attack.health;
         stayWhitBoss = playerLoctions.ZonaBoss;
     }
 }

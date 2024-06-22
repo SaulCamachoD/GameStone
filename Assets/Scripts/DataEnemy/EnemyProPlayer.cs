@@ -48,5 +48,11 @@ public class EnemyProPlayer : EnemyCharacter
         
         //UnityEngine.Debug.Log("muriendo endo");
     }
+
+    public void Attack()
+    {
+        target.GetComponent<SystemLife>().Damage(daño);
+        
+    }
     
 }
